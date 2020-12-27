@@ -56,12 +56,10 @@ def get_contiguous_list(target: int, values: List[int]) -> Optional[List[int]]:
 def main() -> Optional[int]:
     values = read_input("input.txt")
     invalid_val = get_invalid_value(values)
-
     if invalid_val is None:
         return None
 
     contiguous_list = get_contiguous_list(invalid_val, values)
-
     if contiguous_list is None:
         return None
 
