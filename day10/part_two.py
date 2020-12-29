@@ -12,7 +12,7 @@ def read_input(name: str) -> List[int]:
 
 def possible_ways_to_get_here(
     jolts: List[int],
-    index,
+    index: int,
     intermediate_possibilies: List[int],
 ) -> int:
     count = 0
