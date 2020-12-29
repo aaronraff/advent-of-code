@@ -13,14 +13,14 @@ def read_input(name: str) -> List[int]:
 def possible_ways_to_get_here(
     jolts: List[int],
     index: int,
-    intermediate_possibilies: List[int],
+    intermediate_possibilities: List[int],
 ) -> int:
     count = 0
     prev_indexes = [i for i in range(index - 3, index) if i >= 0]
     for prev_index in prev_indexes:
         diff = jolts[index] - jolts[prev_index]
         if diff <= 3:
-            count += intermediate_possibilies[prev_index]
+            count += intermediate_possibilities[prev_index]
 
     return count
 
