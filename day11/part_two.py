@@ -54,7 +54,7 @@ def get_neighbors(layout: List[List[str]], row: int, column: int) -> List[str]:
         while is_in_bounds(layout, new_row, new_column):
             seat = layout[new_row][new_column]
             if seat != FLOOR:
-                neighbors.append(layout[new_row][new_column])
+                neighbors.append(seat)
                 break
             else:
                 new_row += n[0]
